@@ -1,19 +1,14 @@
 <?php
 class Category {
-    private $name;
-    private $type;
+    public $name;
+    public $description;
+    public $iconUrl;
 
-    public function __construct(string $_name, string $_type) {
+
+    public function __construct(string $_name, string $_description, string $_iconUrl) {
         $this->name = $_name;
-        $this->type = $_type;
-    }
-
-    public function getName() {
-        return $this->name;
-    }
-
-    public function getType() {
-        return $this->type;
+        $this->description = $_description;
+        $this->iconUrl = $_iconUrl;
     }
 }
 ?>
